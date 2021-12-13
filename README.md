@@ -2,6 +2,16 @@
 
 https://trello.com/b/4Zcr5fZv/wanted-queries-testing
 
+## QA Report
+
+I ran a set of manual tests on the functionality of the app.
+The app does not work. 
+The "Enter Wanted" function works as intended, with a couple of exceptions:
+1. The Driver's License Expired field is supposed to allow for future dates to be entered. It does not allow for any dates beyond the current without showing an error.
+2. The same condition is true for the License Plate Expired field.
+
+The major malfunction of the app is that it does not assign or request a Warrant Number when entering a wanted person. Therefore, the Modify and Delete Wanted functions are inaccessible. The Warrant numbers can be spoofed, but the numbers don't correlate to any already existing entry.
+
 | Decision Table | Case 1 | Case 2 | Case 3 | Case 4 | Case 5 |Case 6| Case 7 | Case 8 | Case 9 | Case 10 | Case 11 | Case 12 |Case 13|Case 14| Case 15 | Case 16 | Case 17 | Case 18|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |Header, 9-19 char|FALSE|TRUE|
